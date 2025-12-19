@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MovieList</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">MovieList</div>
+
+    <nav>
+      <a href="#" data-page="home" class="nav-link active">Beranda</a>
+      <a href="#" data-page="movies" class="nav-link">Film</a>
+      <a href="#" data-page="about" class="nav-link">Tentang</a>
+      <a href="#" data-page="contact" class="nav-link">Form</a>
+    </nav>
+
+    <div class="actions">
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Cari judul, genre..."
+        autocomplete="off"
+      />
+      <button id="themeToggle" aria-label="Toggle Dark Mode">🌙</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HOME -->
+    <section id="home" class="page active">
+      <!-- Hero unggulan -->
+      <section class="hero hero-featured">
+        <div class="hero-bg-blur"></div>
+
+        <div class="hero-main">
+          <div class="hero-poster">
+            <img id="featuredPoster" src="" alt="Poster unggulan" />
+          </div>
+
+          <div class="hero-info">
+            <p class="featured-label">Sedang Tren</p>
+            <h1 id="featuredTitle"></h1>
+
+            <div class="featured-meta">
+              <span id="featuredYear"></span>
+              <span>•</span>
+              <span id="featuredGenre"></span>
+              <span>•</span>
+              <span id="featuredRating"></span>
+            </div>
+
+            <p id="featuredDesc" class="featured-desc"></p>
+
+            <div class="hero-buttons">
+              <button id="featuredPlay" class="btn-primary">
+                ▶ Tonton cuplikan
+              </button>
+              <button id="featuredDetail" class="btn-secondary">
+                ℹ Detail film
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bar kategori seperti web film besar -->
+        <div class="category-bar">
+          <button class="category-chip active" data-filter="all">Semua</button>
+          <button class="category-chip" data-filter="Action">Action</button>
+          <button class="category-chip" data-filter="Drama">Drama</button>
+          <button class="category-chip" data-filter="Sci-Fi">Sci-Fi</button>
+          <button class="category-chip" data-filter="Animation">Animasi</button>
+        </div>
+      </section>
+
+      <!-- Baris film populer -->
+      <section class="section-row">
+        <div class="section-header">
+          <h2>Film Populer</h2>
+          <button class="link-more" data-page="movies">Lihat semua</button>
+        </div>
+
+        <div class="movie-scroll-wrapper">
+          <div id="homeMovieList" class="movie-list"></div>
+        </div>
+      </section>
+    </section>
+
+    <!-- HALAMAN FILM -->
+    <section id="movies" class="page">
+      <div class="section-header">
+        <h2>Semua Film</h2>
+        <p class="subtext">Scroll horizontal lalu klik poster untuk melihat detail dan cuplikan.</p>
+      </div>
+      <div class="movie-scroll-wrapper">
+        <div id="movieList" class="movie-list"></div>
+      </div>
+    </section>
+
+    <!-- TENTANG -->
+    <section id="about" class="page">
+      <h2>Tentang MovieList</h2>
+      <p>
+        MovieList adalah halaman latihan front-end yang meniru tampilan beranda layanan film besar,
+        dengan hero film unggulan, deretan film populer, dan cuplikan video di dalam modal.
+      </p>
+      <p>
+        Teknologi yang digunakan adalah HTML, CSS, dan JavaScript murni dengan desain gelap,
+        scroll horizontal, dan filter kategori sederhana.
+      </p>
+    </section>
+
+    <!-- FORM -->
+    <section id="contact" class="page">
+      <h2>Form Saran Film</h2>
+      <p class="subtext">Kirim saran film lain yang menurut Anda cocok masuk daftar.</p>
+
+      <form id="suggestForm" class="contact-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Nama</label>
+            <input type="text" id="name" name="name" placeholder="Nama Anda" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email (opsional)</label>
+            <input type="email" id="email" name="email" placeholder="email@contoh.com" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="movieTitle">Judul Film</label>
+          <input type="text" id="movieTitle" name="movieTitle" placeholder="Misal: The Batman" required />
+        </div>
+
+        <div class="form-group">
+          <label for="message">Alasan / Saran</label>
+          <textarea id="message" name="message" rows="4" placeholder="Mengapa film ini menarik?" required></textarea>
+        </div>
+
+        <button type="submit" class="submit-button">Kirim Saran</button>
+        <p id="formStatus" class="form-status"></p>
+      </form>
+    </section>
+  </main>
+
+  <!-- MODAL DETAIL + VIDEO -->
+  <div id="movieModal" class="modal">
+    <div class="modal-content">
+      <span id="modalClose" class="modal-close">&times;</span>
+      <div class="modal-body">
+        <div class="modal-poster">
+          <img id="modalImage" src="" alt="Poster Film" />
+        </div>
+        <div class="modal-info">
+          <h2 id="modalTitle"></h2>
+          <p id="modalMeta"></p>
+          <p id="modalRating"></p>
+
+          <h3>Cuplikan Video</h3>
+          <div class="modal-video-wrapper">
+            <video id="modalVideo" controls preload="metadata">
+              <source id="modalVideoSource" src="" type="video/mp4" />
+              Browser Anda tidak mendukung video HTML5.
+            </video>
+          </div>
+
+          <h3>Deskripsi</h3>
+          <p id="modalDesc"></p>
+          <h3>Sinopsis</h3>
+          <p id="modalSynopsis"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 MovieList</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
