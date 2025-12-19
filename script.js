@@ -7,10 +7,10 @@ const movies = [
     genre: "Drama",
     rating: 8.4,
     image: "joker.jpeg",
-    trailer: "https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4",
+    trailer: "joker.mp4",
     desc: "Transformasi komedian jalanan menjadi sosok Joker yang berbahaya.",
     synopsis:
-      "Arthur Fleck adalah komedian stand-up yang gagal dan hidup terpinggirkan. Tekanan sosial dan masalah kesehatan mental mendorongnya berubah menjadi Joker, simbol kekacauan di kota Gotham."
+      "Arthur Fleck adalah seorang pria dengan gangguan mental yang hidup terpinggirkan di Gotham City. Ia berusaha bertahan hidup sebagai badut jalanan sambil bermimpi menjadi komedian terkenal, namun terus-menerus mendapatkan perlakuan kejam dari masyarakat.Tekanan hidup yang tak tertahankan perlahan mengubah Arthur menjadi sosok Joker. Perubahan ini memicu rangkaian peristiwa kacau yang mengguncang kota dan menjadikan Joker simbol pemberontakan terhadap ketidakadilan sosial."
   },
   {
     id: 2,
@@ -19,10 +19,10 @@ const movies = [
     genre: "Action",
     rating: 9.0,
     image: "thedark.jpg",
-    trailer: "https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4",
+    trailer: "batmantrailer.mp4",
     desc: "Pertarungan Batman melawan Joker di Gotham.",
     synopsis:
-      "Batman, Letnan Gordon, dan Jaksa Harvey Dent berusaha memberantas kejahatan di Gotham. Kehadiran Joker mengguncang kota dan memaksa Batman mengambil keputusan moral paling sulit dalam hidupnya."
+      "Batman kembali melindungi Gotham City bersama Letnan Jim Gordon dan Jaksa Harvey Dent. Kehadiran Dent sebagai simbol harapan baru membuat kejahatan terorganisir mulai terdesak. Namun, situasi berubah drastis ketika muncul sosok kriminal misterius bernama Joker. Joker bukan penjahat biasa. Ia menciptakan kekacauan demi kekacauan untuk menguji batas moral Batman dan masyarakat Gotham. Dalam perjuangan ini, Batman harus menghadapi dilema besar antara mempertahankan prinsipnya atau menyelamatkan kota dengan mengorbankan segalanya"
   },
   {
     id: 3,
@@ -31,10 +31,10 @@ const movies = [
     genre: "Sci-Fi",
     rating: 8.8,
     image: "inception.jpg",
-    trailer: "https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4",
+    trailer: "inceptionn.mp4",
     desc: "Pencuri yang mencuri rahasia dari alam mimpi.",
     synopsis:
-      "Dom Cobb adalah pencuri profesional yang mencuri rahasia berharga dari alam bawah sadar targetnya saat mereka bermimpi. Ia diberi tugas menanamkan sebuah ide ke dalam pikiran seseorang, tugas yang nyaris mustahil."
+      "Dom Cobb adalah pencuri profesional yang memiliki kemampuan mencuri rahasia dari alam bawah sadar seseorang melalui mimpi. Ia ditawari kesempatan untuk menghapus masa lalunya dengan satu misi terakhir: menanamkan ide ke dalam pikiran targetnya. Misi ini membawa Cobb dan timnya ke dalam mimpi berlapis-lapis yang semakin berbahaya. Seiring batas antara mimpi dan realitas mulai kabur, Cobb harus menghadapi trauma masa lalunya yang terus menghantuinya.."
   },
   {
     id: 4,
@@ -43,10 +43,10 @@ const movies = [
     genre: "Sci-Fi",
     rating: 8.6,
     image: "instellar.jpg",
-    trailer: "https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm",
+    trailer: "instellar.mp4",
     desc: "Perjalanan melintasi ruang dan waktu demi masa depan manusia.",
     synopsis:
-      "Bumi mengalami krisis lingkungan dan tidak lagi layak huni. Cooper dan tim astronot lain melakukan perjalanan melalui lubang cacing untuk mencari planet baru demi kelangsungan hidup umat manusia."
+      "Di masa depan, bumi mengalami krisis lingkungan yang parah dan mengancam kelangsungan hidup manusia. Seorang mantan pilot NASA, Cooper, direkrut untuk menjalankan misi berbahaya menjelajahi luar angkasa demi mencari planet baru yang layak huni. Perjalanan Cooper membawa timnya melewati lubang cacing dan menghadapi fenomena relativitas waktu. Di tengah misi penyelamatan umat manusia, Cooper harus menghadapi pengorbanan besar, termasuk hubungannya dengan sang anak. Deskripsi"
   },
   {
     id: 5,
@@ -55,10 +55,10 @@ const movies = [
     genre: "Animation",
     rating: 8.4,
     image: "coco.jpg",
-    trailer: "https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4",
+    trailer: "coco1.mp4",
     desc: "Petualangan Miguel di Dunia Arwah untuk mengejar mimpinya bermusik.",
     synopsis:
-      "Miguel sangat mencintai musik meski keluarganya melarang. Saat ia mencuri gitar dari makam idolanya, ia terseret ke Dunia Arwah dan harus mencari restu keluarganya yang telah tiada untuk kembali."
+      "Miguel adalah seorang anak laki-laki yang bercita-cita menjadi musisi, meskipun keluarganya melarang musik. Pada perayaan Día de los Muertos, Miguel secara tak sengaja masuk ke Dunia Arwah. Dalam perjalanannya, Miguel bertemu dengan arwah leluhurnya dan mengungkap rahasia besar keluarganya. Petualangan ini membawanya pada pemahaman tentang arti keluarga, kenangan, dan jati diri."
   }
 ];
 
